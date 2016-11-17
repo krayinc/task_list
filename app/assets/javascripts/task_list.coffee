@@ -5,7 +5,6 @@
 #= provides tasklist:change
 #= provides tasklist:changed
 #
-#= require jquery
 #
 # Enables Task List update behavior.
 #
