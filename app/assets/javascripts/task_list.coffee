@@ -184,8 +184,8 @@ updateTaskListItem = (source, itemIndex, checked) ->
 # a `tasklist:changed` event once the value has changed.
 updateTaskList = ($item) ->
   $container = $item.closest '.js-task-list-container'
-  $field     = $container.find '.js-task-list-field'
-  index      = 1 + $container.find('.task-list-item-checkbox').index($item)
+  $field     = $container.find '.js-task-list-field:last'
+  index      = 1 + $container.find('> div > ul .task-list-item-checkbox, > div > blockquote > ul .task-list-item-checkbox').index($item)
   checked    = $item.prop 'checked'
 
   event = $.Event 'tasklist:change'
