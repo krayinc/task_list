@@ -185,7 +185,7 @@ updateTaskListItem = (source, itemIndex, checked) ->
 updateTaskList = ($item) ->
   $container = $item.closest '.js-task-list-container'
   $field     = $container.find '.js-task-list-field:last'
-  index      = 1 + $container.find('> div > ul .task-list-item-checkbox, > div > blockquote > ul .task-list-item-checkbox').index($item)
+  index      = 1 + $container.find('> div > ul .task-list-item-checkbox, > div > blockquote > ul .task-list-item-checkbox, > div > ol .task-list-item-checkbox, > div > blockquote > ol .task-list-item-checkbox').index($item)
   checked    = $item.prop 'checked'
 
   event = $.Event 'tasklist:change'
