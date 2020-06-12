@@ -136,8 +136,8 @@ itemPattern = ///
 
 # Used to skip checkbox markup inside of code fences.
 # http://rubular.com/r/TfCDNsy8x4
-startFencesPattern = /^`{3}.*$/
-endFencesPattern = /^`{3}$/
+startFencesPattern = /^\s{0,3}((```+)|(~~~+))(\S*\s*)$/
+endFencesPattern = /^\s{0,3}((```+)|(~~~+))$/
 
 # Used to filter out potential mismatches (items not in lists).
 # http://rubular.com/r/OInl6CiePy
